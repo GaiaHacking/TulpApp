@@ -1,0 +1,8 @@
+{
+  "name": "tulpapp",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular",
+  "id": "890b2c4b"
+}

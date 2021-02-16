@@ -1,0 +1,38 @@
+ion-item{
+  margin-right: 20px;
+  margin-left: 20px;
+  border-radius: 10px;
+}
+
+ion-label{
+  padding-left: 20px;
+}
+
+h3{
+  font-family: 'Inter Extra Bold';
+  font-size: large;
+}
+
+p{
+  font-family: 'Roboto Regular';
+  font-size: medium;
+}
+
+//hide/show the menu
+.active{
+  display: list-item;
+}
+
+.inactive{
+  display: none;
+}
+
+#accordionContent{
+  margin-right: 20px;
+  margin-left: 20px;
+  position: relative;
+  bottom: 20px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-color: #202020;
+}

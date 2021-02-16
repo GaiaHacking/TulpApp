@@ -1,0 +1,20 @@
+<div>
+  <ion-item color={{color}} (click)="toggleAccordion()" id="cardHeader">
+
+    <!--The header-->
+    <ion-avatar>
+      <img src={{image}}/>
+    </ion-avatar>
+    <ion-label>
+      <h3 style="color:white">{{name}}</h3>
+      <p style="color:gray">{{type}}</p>
+    </ion-label>
+    <ion-icon name="chevron-forward-outline"></ion-icon>
+
+  </ion-item>
+
+  <!--The Accordion content-->
+  <div [ngClass]="this.isOpen ? 'active' : 'inactive'" id="accordionContent">
+    <h1 style="color:white">HIIII</h1>
+  </div>
+</div>
