@@ -1,5 +1,5 @@
 <div>
-  <ion-item color={{color}} (click)="toggleAccordion()" id="cardHeader">
+  <ion-item color={{color}} (click)="toggleAccordion()" [style.border-bottom-left-radius]="isOpen ? '0px' : '10px'" [style.border-bottom-right-radius]="isOpen ? '0px' : '10px'">
 
     <!--The header-->
     <ion-avatar>
