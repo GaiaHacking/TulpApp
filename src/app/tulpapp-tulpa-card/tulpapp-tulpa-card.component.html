@@ -5,7 +5,7 @@
     <ion-avatar>
       <img src={{image}}/>
     </ion-avatar>
-    <ion-label>
+    <ion-label class="padding">
       <h3 style="color:white">{{name}}</h3>
       <p style="color:gray">{{type}}</p>
     </ion-label>
@@ -15,6 +15,48 @@
 
   <!--The Accordion content-->
   <div [ngClass]="this.isOpen ? 'active' : 'inactive'" id="accordionContent">
-    <h1 style="color:white">HIIII</h1>
+    <ion-label class="padding">
+      <p id="creationStageTag">
+        {{creationStage}}
+      </p>
+
+      <!--Da Buttons No. 1-->
+      <ion-buttons>
+        <!--The Detail Button-->
+        <ion-button fill="outline" color="primary" [routerLink]="['/tulpae/', name]" routerLinkActive="router-link-active" routerDirection="forward" class="cardButton">
+          <ion-icon name="person" class="cardButtonIcon" slot="icon-only"></ion-icon>
+          <ion-label>
+            <p slot="end" class="cardButtonText">Profile</p>
+          </ion-label>
+        </ion-button>
+
+        <!--Da Progress Button-->
+        <ion-button fill="outline" color="primary" [routerLink]="['/progress/', name]" routerLinkActive="router-link-active" routerDirection="forward" class="cardButton">
+          <ion-icon name="flag" class="cardButtonIcon" slot="icon-only"></ion-icon>
+          <ion-label>
+            <p slot="end" class="cardButtonText">Progress</p>
+          </ion-label>
+        </ion-button>
+      </ion-buttons>
+
+      <!--Da Buttons No. 2-->
+      <ion-buttons>
+        <!--Da Gallery Button-->
+        <ion-button fill="outline" color="primary" [routerLink]="['/gallery/', name]" routerLinkActive="router-link-active" routerDirection="forward" class="cardButton">
+          <ion-icon name="film" class="cardButtonIcon" slot="icon-only"></ion-icon>
+          <ion-label>
+            <p slot="end" class="cardButtonText">Gallery</p>
+          </ion-label>
+        </ion-button>
+
+        <!--Da Settings Button-->
+        <ion-button fill="outline" color="primary" [routerLink]="['/settings/', name]" routerLinkActive="router-link-active" routerDirection="forward" class="cardButton">
+          <ion-icon name="settings" class="cardButtonIcon" slot="icon-only"></ion-icon>
+          <ion-label>
+            <p slot="end" class="cardButtonText">Settings</p>
+          </ion-label>
+        </ion-button>
+      </ion-buttons>
+    </ion-label>
   </div>
 </div>

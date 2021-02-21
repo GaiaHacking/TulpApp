@@ -13,6 +13,8 @@ export class TulpappTulpaCardComponent{
   @Input() type: string;
   @Input() color: string;
   @Input() image: string;
+  @Input() creationStage: string; //the stage with description, e.g. vocality, imposition, etc.
+  @Input() creationStageProgress: number; //the progress in percentage, e.g. vocality - 50%. Is displayed in a progress bar
 
   //Accordion things
   @Output() change: EventEmitter<string> = new EventEmitter<string>();
