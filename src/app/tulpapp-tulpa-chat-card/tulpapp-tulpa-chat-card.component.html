@@ -1,0 +1,13 @@
+<a [routerLink]="['/chat/', name]" routerLinkActive="router-link-active">
+  <ion-item color={{color}}>
+
+    <ion-avatar>
+      <img src={{image}}/>
+    </ion-avatar>
+    <ion-label class="padding">
+      <h3 style="color:white">{{name}}</h3>
+      <p style="color:gray">{{lastMessage}}</p>
+    </ion-label>
+
+  </ion-item>
+</a>

@@ -21,6 +21,10 @@ const routes: Routes = [
   {
     path: 'settings/:tulpID',
     loadChildren: () => import('./tulpa-settings-page/tulpa-settings-page.module').then(m => m.TulpaSettingsPagePageModule)
+  },
+  {
+    path: 'chat/:tulpID',
+    loadChildren: () => import('./tulpa-chat-page/tulpa-chat-page.module').then(m => m.TulpaChatPagePageModule)
   }
 ];
 

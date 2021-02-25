@@ -1,5 +1,4 @@
 import { Component, Input, Output, EventEmitter, ViewChild, ElementRef } from '@angular/core';
-import { AngularDelegate, IonItem } from '@ionic/angular';
 
 @Component({
   selector: 'tulpapp-tulpa-card',
@@ -19,7 +18,6 @@ export class TulpappTulpaCardComponent{
   //Accordion things
   @Output() change: EventEmitter<string> = new EventEmitter<string>();
   public isOpen: boolean = false;
-  @ViewChild('card') el: ElementRef<IonItem>;
 
 
   constructor() {
