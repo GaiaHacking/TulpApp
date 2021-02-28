@@ -15,6 +15,11 @@ p{
   font-size: medium;
 }
 
+//rotate icon
+.rotated{
+  transform: rotate(90deg);
+}
+
 //hide/show the menu
 .active{
   display: list-item;
