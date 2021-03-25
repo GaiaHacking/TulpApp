@@ -35,9 +35,20 @@
     src: url('assets/fonts/Roboto-Regular.ttf');
 }
 
+p{
+  font-family: 'Roboto Regular';
+  font-size: medium;
+  color: white;
+}
+
 ion-title{
     font-family: 'Inter Extra Bold';
     font-size: 105%;
     color: white;
     padding: 5%;
+}
+
+ion-toolbar {
+  --background-color: transparent !important;
+  --ion-color-base: transparent !important;
 }

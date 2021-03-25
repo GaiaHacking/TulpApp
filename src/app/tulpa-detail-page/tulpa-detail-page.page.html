@@ -1,10 +1,26 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-back-button slot="start" defaultHref="/tablinks/system"></ion-back-button>
-    <ion-title color="primary">{{tulpaID}}</ion-title>
+  <ion-toolbar color="secondary">
+    <ion-back-button slot="start" defaultHref="/tablinks/system" icon="close-outline"></ion-back-button>
+    <ion-button slot="end" fill="clear">
+      <ion-icon name="ellipsis-vertical" id="moreButton"></ion-icon>
+    </ion-button>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
+  <div id="Wrapper">
+    <!--The profile picture-->
+    <img src="https://iupac.org/wp-content/uploads/2018/05/default-avatar.png" id="pPic">
+    <ion-title id="name">
+      {{tulpaID}}
+    </ion-title>
+    <ion-label>
+      <p class="subColor" style="font-size: medium !important;">Here go the pronouns and the age</p>
+    </ion-label>
 
+    <div class="blob">
+      <p class="subColor">Current Progress</p>
+      <ion-title id="Milestone">Current Milestone</ion-title>
+    </div>
+  </div>
 </ion-content>

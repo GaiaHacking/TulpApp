@@ -1,0 +1,56 @@
+ion-content{
+  --background: linear-gradient(var(--ion-color-secondary), #000000 20%) !important;
+}
+
+ion-back-button{
+  --color: white !important;
+}
+
+ion-header::after{
+  background: none !important;
+}
+
+#moreButton{
+  color: white !important;
+}
+
+#Wrapper{
+  padding-top: 30px;
+  text-align: center;
+}
+
+#pPic{
+  border-radius: 50%;
+  width: 25%;
+  height: 25%;
+}
+
+#name{
+  font-size: 200%;
+}
+
+#Milestone{
+  text-align: left !important;
+  color: var(--ion-color-secondary-tint);
+  padding-top: 0% !important;
+  font-size: 150% !important;
+  position: relative;
+  bottom: 10px;
+}
+
+.subColor{
+  color: #848484 !important;
+}
+
+.blob{
+  margin-left: 5%;
+  margin-right: 5%;
+  background-color: #202020;
+  border-radius: 10px;
+}
+
+.blob *{
+  padding: 5px;
+  padding-left: 10px !important;
+  text-align: left !important;
+}
