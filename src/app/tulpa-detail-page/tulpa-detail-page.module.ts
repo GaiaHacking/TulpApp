@@ -8,12 +8,15 @@ import { TulpaDetailPagePageRoutingModule } from './tulpa-detail-page-routing.mo
 
 import { TulpaDetailPagePage } from './tulpa-detail-page.page';
 
+import {NgxGaugeModule} from 'ngx-gauge';
+
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    TulpaDetailPagePageRoutingModule
+    TulpaDetailPagePageRoutingModule,
+    NgxGaugeModule,
   ],
   declarations: [TulpaDetailPagePage]
 })

@@ -1,14 +1,14 @@
-<ion-header>
-  <ion-toolbar color="secondary">
+<ion-content>
+
+  <ion-toolbar>
     <ion-back-button slot="start" defaultHref="/tablinks/system" icon="close-outline"></ion-back-button>
     <ion-button slot="end" fill="clear">
       <ion-icon name="ellipsis-vertical" id="moreButton"></ion-icon>
     </ion-button>
   </ion-toolbar>
-</ion-header>
 
-<ion-content>
   <div id="Wrapper">
+
     <!--The profile picture-->
     <img src="https://iupac.org/wp-content/uploads/2018/05/default-avatar.png" id="pPic">
     <ion-title id="name">
@@ -29,8 +29,20 @@
       <p id="nGoal">next Goal</p>
     </div>
 
-    <div class="blob">
-
+    <!--The assessement blob-->
+    <div class="blob" id="assessementBlob">
+      <p class="subColor">Assessement</p>
+      <ngx-gauge
+        [type]="gaugeType"
+        [value]="gaugeValue"
+        [thick]="gaugeThickness"
+        [size]="gaugeSize"
+        [foregroundColor]="gaugeColor"
+        id="gauge"
+        ></ngx-gauge>
+      <h1 id="ProgHeader">Prog Header</h1>
+      <p id="ProgText">Prog Text</p>
     </div>
   </div>
+
 </ion-content>

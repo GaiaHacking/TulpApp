@@ -2,6 +2,10 @@ ion-content{
   --background: linear-gradient(var(--ion-color-secondary), #000000 20%) !important;
 }
 
+ion-toolbar{
+  --background: transparent;
+}
+
 ion-back-button{
   --color: white !important;
 }
@@ -63,6 +67,27 @@ ion-header::after{
   bottom: 30px;
 }
 
+#assessementBlob{
+  max-height: 300px;
+}
+
+#gauge{
+  color: rgba(100, 100, 100, 0);
+  position: relative;
+  bottom: 25px;
+}
+
+#ProgHeader{
+  text-align: center !important;
+  position: relative;
+  bottom: 125px;
+}
+
+#ProgText{
+  position: relative;
+  bottom: 135px;
+}
+
 .subColor{
   color: #848484 !important;
 }
@@ -75,6 +100,7 @@ ion-header::after{
 }
 
 .blob *{
+  display: block;
   padding: 5px;
   padding-left: 10px !important;
   text-align: left !important;

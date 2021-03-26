@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, NgModule } from '@angular/core';
 import {ActivatedRoute} from '@angular/router';
 
 @Component({
@@ -8,7 +8,13 @@ import {ActivatedRoute} from '@angular/router';
 })
 export class TulpaDetailPagePage implements OnInit {
 
-  tulpaID = null
+  tulpaID = null;
+
+  gaugeType = "semi";
+  gaugeValue = 50.0;
+  gaugeThickness = 75;
+  gaugeSize = 300;
+  gaugeColor = getComputedStyle(document.documentElement).getPropertyValue('--ion-color-secondary');
 
   constructor(private route: ActivatedRoute) {  }
 
