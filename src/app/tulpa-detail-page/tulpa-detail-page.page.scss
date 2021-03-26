@@ -6,6 +6,15 @@ ion-back-button{
   --color: white !important;
 }
 
+ion-progress-bar{
+  height: 15px;
+  border-radius: 50px;
+  --progress-background: var(--ion-color-primary-tint);
+  --buffer-background: #424242;
+  position: relative;
+  bottom: 30px;
+}
+
 ion-header::after{
   background: none !important;
 }
@@ -17,6 +26,7 @@ ion-header::after{
 #Wrapper{
   padding-top: 30px;
   text-align: center;
+  margin-bottom: -25px;
 }
 
 #pPic{
@@ -36,6 +46,21 @@ ion-header::after{
   font-size: 150% !important;
   position: relative;
   bottom: 10px;
+}
+
+#MilestoneText{
+  position: relative;
+  bottom: 25px;
+}
+
+#progBarWrapper{
+  margin-right: 5px;
+}
+
+#nGoal{
+  color: var(--ion-color-secondary);
+  position: relative;
+  bottom: 30px;
 }
 
 .subColor{

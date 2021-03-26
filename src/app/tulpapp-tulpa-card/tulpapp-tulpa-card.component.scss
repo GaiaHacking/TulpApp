@@ -15,6 +15,13 @@ p{
   font-size: medium;
 }
 
+ion-progress-bar{
+  height: 10px;
+  border-radius: 50px;
+  --progress-background: var(--ion-color-primary-tint);
+  --buffer-background: #424242;
+}
+
 //rotate icon
 .rotated{
   transform: rotate(90deg);
@@ -54,12 +61,6 @@ p{
   margin-right: 100px;
 }
 
-ion-progress-bar{
-  height: 10px;
-  border-radius: 50px;
-  --progress-background: var(--ion-color-primary-tint);
-  --buffer-background: #424242;
-}
 
 #logLabel{
   padding-left: 20px !important;
