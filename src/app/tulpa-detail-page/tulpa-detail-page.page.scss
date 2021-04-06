@@ -15,12 +15,18 @@ ion-progress-bar{
   border-radius: 50px;
   --progress-background: var(--ion-color-primary-tint);
   --buffer-background: #424242;
-  position: relative;
+  //position: relative;
   bottom: 30px;
 }
 
 ion-header::after{
   background: none !important;
+}
+
+ion-badge{
+  border-radius: 50px;
+  margin: 2px;
+  margin-bottom: 10px;
 }
 
 #moreButton{
@@ -48,44 +54,61 @@ ion-header::after{
   color: var(--ion-color-secondary-tint);
   padding-top: 0% !important;
   font-size: 150% !important;
-  position: relative;
   bottom: 10px;
 }
 
 #MilestoneText{
-  position: relative;
-  bottom: 25px;
+  margin-bottom: -35px;
 }
 
 #progBarWrapper{
+  margin-top: 10px;
   margin-right: 5px;
 }
 
 #nGoal{
   color: var(--ion-color-secondary);
-  position: relative;
   bottom: 30px;
-}
-
-#assessementBlob{
-  max-height: 300px;
+  padding-bottom: 10px;
 }
 
 #gauge{
-  color: rgba(100, 100, 100, 0);
-  position: relative;
-  bottom: 25px;
+  color: rgba(100, 100, 100, 0); //make the text invisible
+  margin-top: -30px;
 }
 
 #ProgHeader{
   text-align: center !important;
-  position: relative;
-  bottom: 125px;
+  margin-top: -90px;
 }
 
 #ProgText{
-  position: relative;
   bottom: 135px;
+  padding-bottom: 10px;
+}
+
+#description{
+  margin-bottom: 5px;
+  padding-bottom: 10px;
+}
+
+#scrollWrapper{
+  overflow-x: scroll;
+  white-space: nowrap;
+}
+
+#addIMG{
+  margin-right: -2.5px;
+  display: inline-block;
+  --border-radius: 10px;
+  --background: #848484;
+  height: 100px;
+  width: 100px;
+}
+
+#addIMGicon{
+  color: white;
+  font-size: 26pt;
 }
 
 .subColor{
@@ -100,8 +123,17 @@ ion-header::after{
 }
 
 .blob *{
-  display: block;
-  padding: 5px;
   padding-left: 10px !important;
   text-align: left !important;
+  padding: 5px;
+}
+
+.gField{
+  margin-top: 8px;
+  display: inline-block;
+  border-radius: 10px !important;
+  height: 90px;
+  width: 90px;
+  background-size: cover;
+  margin-left: 10px;
 }

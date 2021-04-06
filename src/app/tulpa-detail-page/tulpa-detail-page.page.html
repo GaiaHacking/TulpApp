@@ -30,7 +30,7 @@
     </div>
 
     <!--The assessement blob-->
-    <div class="blob" id="assessementBlob">
+    <div class="blob">
       <p class="subColor">Assessement</p>
       <ngx-gauge
         [type]="gaugeType"
@@ -43,6 +43,43 @@
       <h1 id="ProgHeader">Prog Header</h1>
       <p id="ProgText">Prog Text</p>
     </div>
+
+    <!--The description Blob-->
+    <div class="blob">
+      <p class="subColor">Description</p>
+      <p id="description">Here comes the description</p>
+    </div>
+
+    <!--The Traits blob-->
+    <div class="blob">
+      <p class="subColor">Traits</p>
+
+      <ion-badge color="medium">Nice</ion-badge>
+      <ion-badge color="medium">Friendly</ion-badge>
+      <ion-badge color="medium">Helpful</ion-badge>
+      <ion-badge color="medium">Confident</ion-badge>
+
+    </div>
+
+    <!--The Gallery Blob-->
+    <div class="blob">
+      <p class="subColor">Gallery</p>
+
+      <div id="scrollWrapper">
+        <!--This button will be used to launch the gallery and upload an image-->
+        <ion-button id="addIMG">
+          <ion-icon name="add-outline" id="addIMGicon"></ion-icon>
+        </ion-button>
+
+        <!--Here come the images that were saved and are associated with the tulpa-->
+        <div class="gField" style="background-image: url(https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX34615255.jpg);">
+        </div>
+
+      </div>
+
+    </div>
+
   </div>
+
 
 </ion-content>
