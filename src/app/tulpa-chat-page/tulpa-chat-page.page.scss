@@ -1,0 +1,28 @@
+#msgWrapper{
+  overflow-y: scroll;
+  max-height: 90%;
+}
+
+#inputFieldWrapper{
+  margin: 0px 25px 25px 25px;
+  border-radius: 50px;
+  background-color: #333333;
+}
+
+#inputWrapper{
+  max-height: 40px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.rightAlignChatBubble{
+  border-radius: 20px;
+  margin-left: 65%;
+  margin-right: 15px;
+}
+
+.leftAlignChatBubble{
+  border-radius: 20px;
+  margin-right: 65%;
+  margin-left: 15px;
+}

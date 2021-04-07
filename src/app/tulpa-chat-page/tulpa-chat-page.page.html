@@ -7,4 +7,29 @@
 
 <ion-content>
 
+  <div id="msgWrapper">
+
+  <!--This will generate the message bubbles out of the chatMessages Array-->
+  <ion-list *ngFor="let msg of chatMessages">
+    <ion-item color="primary" [ngClass]="msg.sender === currentWriter ? 'rightAlignChatBubble' : 'leftAlignChatBubble'">
+      <p>{{msg.messageContent}}</p>
+    </ion-item>
+  </ion-list>
+
+  </div>
+
 </ion-content>
+
+<ion-footer>
+  <div id="inputFieldWrapper">
+
+    <div id="headmateSelection">
+      <img src="https://iupac.org/wp-content/uploads/2018/05/default-avatar.png">
+    </div>
+
+    <div id="inputWrapper">
+      <ion-textarea rows="1" color="medium" placeholder="Write a message"></ion-textarea>
+    </div>
+
+  </div>
+</ion-footer>
