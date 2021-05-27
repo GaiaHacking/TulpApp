@@ -2,6 +2,8 @@
   <ion-toolbar>
     <ion-back-button defaultHref="/tablinks/chat" slot="start"></ion-back-button>
     <ion-title>{{tulpaID}}</ion-title>
+
+    <img height="50px" width="50px" src="https://iupac.org/wp-content/uploads/2018/05/default-avatar.png" slot="end" id="writeSelector">
   </ion-toolbar>
 </ion-header>
 
@@ -23,13 +25,12 @@
 <ion-footer>
   <div id="inputFieldWrapper">
 
-    <div id="headmateSelection">
-      <img src="https://iupac.org/wp-content/uploads/2018/05/default-avatar.png">
-    </div>
-
     <div id="inputWrapper">
       <ion-textarea rows="1" color="medium" placeholder="Write a message"></ion-textarea>
     </div>
 
+    <ion-button fill="clear" color="light" id="sendButton">
+      <ion-icon name="send-outline"></ion-icon>
+    </ion-button>
   </div>
 </ion-footer>
